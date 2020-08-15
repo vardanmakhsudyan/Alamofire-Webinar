@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2891C77BC7E23F1FA374EE1C /* Pods_Webinar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4A53C8D52F0C5308847FE3 /* Pods_Webinar.framework */; };
 		D07EF0E524E1FBE400A708C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EF0E424E1FBE400A708C5 /* AppDelegate.swift */; };
 		D07EF0E724E1FBE400A708C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EF0E624E1FBE400A708C5 /* SceneDelegate.swift */; };
 		D07EF0E924E1FBE400A708C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EF0E824E1FBE400A708C5 /* ViewController.swift */; };
 		D07EF0EC24E1FBE500A708C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07EF0EA24E1FBE500A708C5 /* Main.storyboard */; };
 		D07EF0EE24E1FBEC00A708C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07EF0ED24E1FBEC00A708C5 /* Assets.xcassets */; };
 		D07EF0F124E1FBEC00A708C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07EF0EF24E1FBEC00A708C5 /* LaunchScreen.storyboard */; };
+		D07EF0F924E1FD7C00A708C5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EF0F824E1FD7C00A708C5 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A4A53C8D52F0C5308847FE3 /* Pods_Webinar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Webinar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BE734D1509C30232BC4C73 /* Pods-Webinar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Webinar.debug.xcconfig"; path = "Target Support Files/Pods-Webinar/Pods-Webinar.debug.xcconfig"; sourceTree = "<group>"; };
 		D07EF0E124E1FBE400A708C5 /* Webinar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Webinar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07EF0E424E1FBE400A708C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D07EF0E624E1FBE400A708C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		D07EF0ED24E1FBEC00A708C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07EF0F024E1FBEC00A708C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07EF0F224E1FBEC00A708C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07EF0F824E1FD7C00A708C5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		E3575E7629E432F8193E267D /* Pods-Webinar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Webinar.release.xcconfig"; path = "Target Support Files/Pods-Webinar/Pods-Webinar.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2891C77BC7E23F1FA374EE1C /* Pods_Webinar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		248E95394C8F1F90F0419CA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46BE734D1509C30232BC4C73 /* Pods-Webinar.debug.xcconfig */,
+				E3575E7629E432F8193E267D /* Pods-Webinar.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9EBE7450970DA62B495AFDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A4A53C8D52F0C5308847FE3 /* Pods_Webinar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D07EF0D824E1FBE400A708C5 = {
 			isa = PBXGroup;
 			children = (
 				D07EF0E324E1FBE400A708C5 /* Webinar */,
 				D07EF0E224E1FBE400A708C5 /* Products */,
+				248E95394C8F1F90F0419CA6 /* Pods */,
+				C9EBE7450970DA62B495AFDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +86,7 @@
 				D07EF0E424E1FBE400A708C5 /* AppDelegate.swift */,
 				D07EF0E624E1FBE400A708C5 /* SceneDelegate.swift */,
 				D07EF0E824E1FBE400A708C5 /* ViewController.swift */,
+				D07EF0F824E1FD7C00A708C5 /* TableViewController.swift */,
 				D07EF0EA24E1FBE500A708C5 /* Main.storyboard */,
 				D07EF0ED24E1FBEC00A708C5 /* Assets.xcassets */,
 				D07EF0EF24E1FBEC00A708C5 /* LaunchScreen.storyboard */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D07EF0F524E1FBEC00A708C5 /* Build configuration list for PBXNativeTarget "Webinar" */;
 			buildPhases = (
+				C42C57CEE5006A6E51D4D714 /* [CP] Check Pods Manifest.lock */,
 				D07EF0DD24E1FBE400A708C5 /* Sources */,
 				D07EF0DE24E1FBE400A708C5 /* Frameworks */,
 				D07EF0DF24E1FBE400A708C5 /* Resources */,
+				1B53BAF88550CC01F49B3805 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +163,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B53BAF88550CC01F49B3805 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Webinar/Pods-Webinar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Webinar/Pods-Webinar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Webinar/Pods-Webinar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C42C57CEE5006A6E51D4D714 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Webinar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D07EF0DD24E1FBE400A708C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +213,7 @@
 				D07EF0E924E1FBE400A708C5 /* ViewController.swift in Sources */,
 				D07EF0E524E1FBE400A708C5 /* AppDelegate.swift in Sources */,
 				D07EF0E724E1FBE400A708C5 /* SceneDelegate.swift in Sources */,
+				D07EF0F924E1FD7C00A708C5 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +355,7 @@
 		};
 		D07EF0F624E1FBEC00A708C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46BE734D1509C30232BC4C73 /* Pods-Webinar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +373,7 @@
 		};
 		D07EF0F724E1FBEC00A708C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3575E7629E432F8193E267D /* Pods-Webinar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
